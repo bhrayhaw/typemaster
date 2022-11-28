@@ -163,12 +163,14 @@ img {
     margin: 0 auto;
 }
 
+/* Breakpoint tablet */
 @media (min-width: 600px) {
     .container {
         width: 90%;
     }
 }
 
+/* Breakpoint laptop */
 @media (min-width: 1024px) {
     .container {
         width: 77%;
@@ -251,6 +253,7 @@ header .container {
     width: auto;
 }
 
+/* Breakpoint tablet */
 @media (min-width: 600px) {
     .typemaster .container {
         grid-template-columns: repeat(12, 1fr);
@@ -270,6 +273,7 @@ header .container {
     }
 }
 
+/* Breakpoint laptop */
 @media (min-width: 1024px) {
     .typemaster .container {
         position: relative;
@@ -360,9 +364,9 @@ header .container {
     }
 
     .mechanical__image-1 img {
-      width: 100%;
-      border-radius: var(--border-radius) ;
-  }
+        width: 100%;
+        border-radius: var(--border-radius) ;
+    }
 
 }
 
@@ -424,8 +428,8 @@ header .container {
     }
 
     .mechanical__image-1 img {
-      width: 100%;
-      border-radius: var(--border-radius);
+        width: 100%;
+        border-radius: var(--border-radius);
     }
 
 
@@ -530,6 +534,7 @@ header .container {
     font-weight: 500;
 }
 
+/* Tablet breakpoint */
 @media (min-width: 600px) {
     .footer {
         margin-top: 14.2rem;
@@ -537,7 +542,8 @@ header .container {
     }
 }
 
-@media (min-width: 600px) {
+/* Desktop breakpoint */
+@media (min-width: 1024px) {
     .footer {
         margin-top: 12.8rem;
         margin-bottom: 3.9rem;
