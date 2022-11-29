@@ -216,7 +216,7 @@ header .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2.4rem;
-    row-gap: 6.3rem;
+    row-gap: 4.3rem;
 }
 
 .typemaster__textcontent {
@@ -245,19 +245,23 @@ header .container {
 }
 
 .typemaster__image {
+    position: relative;
     grid-column: span 4;
+    left: 3.5em;
+    right: 0;
 }
 
 .typemaster__image img {
     border-radius: var(--border-radius);
     width: auto;
+
 }
 
 /* Breakpoint tablet */
 @media (min-width: 600px) {
     .typemaster .container {
         grid-template-columns: repeat(12, 1fr);
-        column-gap: 2.2rem;
+        column-gap: 1.8rem;
     }
 
     .typemaster__textcontent {
@@ -266,6 +270,7 @@ header .container {
 
     .typemaster__image {
         grid-column: 8 / 13;
+        margin-right: 28px;
     }
 
     .typemaster__image img {
@@ -283,7 +288,7 @@ header .container {
         content: url(../assets/shared/pattern-square.svg);
         position: absolute;
         top: 0;
-        right: -29rem;
+        right: -32rem;
     }
 
     .typemaster__textcontent {
@@ -318,10 +323,13 @@ header .container {
     justify-self: end;
     background-color: var(--btn-secondary);
     border-radius: var(--border-radius);
+    position: relative;
+    left: -3.5em;
+    right: 0;
 }
 
 .mechanical__image-1 img {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     border-radius: var(--border-radius);
     mix-blend-mode: multiply;
@@ -331,6 +339,7 @@ header .container {
 
 .mechanical__image-2 {
     grid-column: span 4;
+    margin-left: -2.5em;
 }
 
 .mechanical__image-2 img {
@@ -386,12 +395,13 @@ header .container {
         content: url(../assets/shared/pattern-square.svg);
         position: absolute;
         bottom: 0;
-        left: -29rem;
+        left: -32rem;
     }
 
     .mechanical__image-1 {
         justify-self: auto;
         grid-column: span 4;
+        margin-left: 28px;
     }
 
     .mechanical__image-1 img {
